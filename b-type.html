@@ -1957,16 +1957,22 @@
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
+  // 토스트는 안내 메시지를 그대로 띄웁니다.
+  // 복사 안내처럼 따옴표로 감싸야 하는 경우는 showCopyToast를 쓰세요.
   function showToast(text) {
     const toast = document.getElementById('copyToast');
-    toast.textContent = '"' + text + '" 복사됨';
+    toast.textContent = text;
     toast.classList.add('show');
     clearTimeout(toast._timer);
     toast._timer = setTimeout(() => toast.classList.remove('show'), 1500);
   }
 
+  function showCopyToast(text) {
+    showToast('"' + text + '" 복사됨');
+  }
+
   function copyText(text) {
-    navigator.clipboard.writeText(text).then(() => showToast(text));
+    navigator.clipboard.writeText(text).then(() => showCopyToast(text));
   }
 
   document.querySelectorAll('.hashtag').forEach(el => {
