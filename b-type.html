@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOYR — 인플루언서 가이드라인 (B Type)</title>
+
+  <!-- Open Graph (카카오톡/인스타그램/SNS 공유 미리보기) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://loyr-guideline.vercel.app/">
+  <meta property="og:title" content="로이어 인플루언서 가이드라인">
+  <meta property="og:description" content="LOYR × Creator Campaign — 제작 가이드, 해시태그, 정산 안내">
+  <meta property="og:image" content="https://loyr-guideline.vercel.app/image/banner.png">
+  <meta property="og:image:secure_url" content="https://loyr-guideline.vercel.app/image/banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1270">
+  <meta property="og:image:height" content="707">
+  <meta name="description" content="LOYR × Creator Campaign — 제작 가이드, 해시태그, 정산 안내">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="theme-color" content="#446CA9">
+
+  <!-- Twitter Card (옵션) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="로이어 인플루언서 가이드라인">
+  <meta name="twitter:description" content="LOYR × Creator Campaign — 제작 가이드, 해시태그, 정산 안내">
+  <meta name="twitter:image" content="https://loyr-guideline.vercel.app/image/banner.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #446CA9;
+      --brand-deep: #355484;
+      --brand-line: #5F88BE;
+      --brand-pale: #E8EDF5;
+      --brand-text: #3A5F96;
+      --cream: #F7F9FC;
+      --warm-white: #EFF3F8;
+      --text-dark: #1E2A3A;
+      --text-mid: #5B6B80;
+      --text-light: #9AAABE;
+      --border: #D9E2EC;
+      --tag-bg: #E8EDF4;
+      --on-brand: #FFFFFF;
+      --on-brand-accent: #C7DAF2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    /* BANNER */
+    .banner-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+      background: #E9EBEE;
+    }
+    .banner-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      padding: 0 24px 34px;
+      background: linear-gradient(to bottom,
+        rgba(20,30,44,0) 42%,
+        rgba(20,30,44,0.30) 64%,
+        rgba(20,30,44,0.70) 86%,
+        rgba(20,30,44,0.88) 100%);
+    }
+    .header-eyebrow {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      font-weight: 400;
+      color: rgba(255,255,255,0.78);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .header-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .header-title {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+    .header-fee {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.42);
+      border-radius: 20px;
+      padding: 4px 11px;
+      line-height: 1.5;
+      white-space: nowrap;
+      backdrop-filter: blur(2px);
+    }
+    .header-sub {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      .header-title { font-size: 18px; }
+      .banner-overlay { padding: 0 18px 24px; }
+    }
+
+    /* SECTION */
+    .section {
+      padding: 48px 28px;
+      border-bottom: 1px solid var(--border);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      color: var(--brand-text);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background: var(--brand-text);
+    }
+    .section-title {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+
+    /* ABOUT */
+    .about-lead {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-mid);
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.8;
+    }
+    .brand-img-wrap {
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+    .brand-img-wrap img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .about-grid { display: grid; gap: 12px; }
+    .about-item {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .about-item-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand-text);
+      margin-bottom: 6px;
+    }
+    .about-item-desc {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+    .brand-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: var(--brand);
+      color: var(--on-brand);
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 20px;
+      border: 1px solid var(--brand-line);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .brand-link-btn:active { opacity: 0.75; }
+
+    /* INFO BOX */
+    .info-box {
+      background: var(--brand);
+      color: var(--on-brand);
+      border: 1px solid var(--brand-line);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .info-box-title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.62);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13.5px;
+      margin-bottom: 10px;
+    }
+    .info-row:last-child { margin-bottom: 0; }
+    .info-key {
+      min-width: 70px;
+      color: rgba(255,255,255,0.58);
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+    .info-val { color: var(--on-brand); font-weight: 500; line-height: 1.6; }
+    .info-val strong { color: var(--on-brand-accent); }
+
+    /* PRODUCT */
+    .product-box {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .product-photo {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+    .product-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.4;
+    }
+    .product-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 11px 16px;
+      background: var(--tag-bg);
+      color: var(--brand-text);
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 20px;
+      text-decoration: none;
+      align-self: flex-start;
+      border: 1px solid var(--border);
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* PRODUCT OPTIONS */
+    .prod-pick-note {
+      font-size: 12px;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .prod-pick-note strong { color: var(--brand-text); }
+    .prod-option {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: #FFFFFF;
+    }
+    .prod-option-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+    .prod-option-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: var(--on-brand);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-option-items {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-dark);
+      background: var(--tag-bg);
+      border-radius: 8px;
+      padding: 10px 12px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .prod-option-desc {
+      display: flex;
+      gap: 6px;
+      font-size: 12.5px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .prod-option-desc::before {
+      content: '→';
+      color: var(--brand-text);
+      flex-shrink: 0;
+    }
+    .prod-or {
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--text-light);
+    }
+
+    /* PRODUCT PHOTOS */
+    .prod-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .prod-photo-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 6px 10px;
+      text-align: center;
+    }
+    .prod-photo-item img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+    }
+    .prod-photo-step {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--brand-text);
+      margin-top: 4px;
+    }
+    .prod-photo-cap {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-mid);
+      line-height: 1.4;
+      margin-top: 2px;
+      word-break: keep-all;
+    }
+
+    /* ONE-LINE BRIEF */
+    .brief-box {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 20px;
+    }
+    .brief-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--text-light);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .brief-line {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.55;
+      letter-spacing: -0.01em;
+    }
+    .brief-line em { font-style: normal; color: var(--brand); }
+    .brief-protocol {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: 0.01em;
+      margin-top: 6px;
+    }
+
+    /* 3-STEP 제품 카드 */
+    .step-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #FFFFFF;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+    }
+    .step-card:last-child { margin-bottom: 0; }
+    .step-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--on-brand);
+      background: var(--brand);
+      padding: 3px 9px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .step-prod-en {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--brand-text);
+      letter-spacing: 0.02em;
+      margin-bottom: 2px;
+    }
+    .step-prod {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.45;
+    }
+    .step-meta {
+      font-size: 11.5px;
+      color: var(--text-light);
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+    .step-lead {
+      font-size: 12.5px;
+      color: var(--text-mid);
+      line-height: 1.65;
+      padding: 11px 13px;
+      background: var(--tag-bg);
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .step-feat { font-size: 12.5px; line-height: 1.6; margin-bottom: 10px; }
+    .step-feat:last-of-type { margin-bottom: 0; }
+    .step-feat strong { display: block; color: var(--text-dark); margin-bottom: 2px; }
+    .step-feat span { color: var(--text-mid); }
+    .step-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border);
+    }
+    .step-col-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--brand-text);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .step-col ul { margin: 0; padding-left: 15px; font-size: 12px; color: var(--text-mid); line-height: 1.65; }
+    .step-col ul strong { color: var(--text-dark); }
+    .step-tags {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border);
+      font-size: 12px;
+      color: var(--brand-text);
+      font-weight: 500;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    /* GUARDRAILS */
+    .guard-grid { display: grid; gap: 12px; }
+    .guard-box { border-radius: 12px; padding: 18px 20px; }
+    .guard-box.must { background: var(--text-dark); }
+    .guard-box.avoid { background: var(--warm-white); border: 1px solid var(--border); }
+    .guard-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .guard-box.must .guard-title { color: #FFFFFF; }
+    .guard-box.avoid .guard-title { color: var(--text-dark); }
+    .guard-item {
+      font-size: 12.5px;
+      line-height: 1.7;
+      padding: 4px 0 4px 18px;
+      position: relative;
+    }
+    .guard-box.must .guard-item { color: rgba(255,255,255,0.85); }
+    .guard-box.avoid .guard-item { color: var(--text-mid); }
+    .guard-item::before { content: '\25A1'; position: absolute; left: 0; opacity: 0.7; }
+
+    /* ANGLE GUIDE */
+    .angle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .angle-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #FFFFFF;
+      padding: 14px 16px;
+    }
+    .angle-num {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--brand-text);
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+    .angle-name { font-size: 13px; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+    .angle-desc { font-size: 12px; color: var(--text-mid); line-height: 1.6; }
+    .angle-thumb {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--tag-bg);
+      margin-bottom: 10px;
+    }
+    .angle-thumb img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+    }
+    .angle-thumb-tag {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background: rgba(30,42,58,0.72);
+      color: #FFFFFF;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 3px 7px;
+      border-radius: 20px;
+      backdrop-filter: blur(2px);
+    }
+
+    /* THUMBNAIL GUIDE */
+    .thumb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .thumb-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+    .thumb-item img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+      background: var(--tag-bg);
+    }
+    .thumb-cap { padding: 10px 12px 12px; }
+    .thumb-cap-num {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--brand-text);
+    }
+    .thumb-cap-name { font-size: 12.5px; font-weight: 700; color: var(--text-dark); margin: 2px 0 4px; }
+    .thumb-cap-desc { font-size: 11.5px; color: var(--text-mid); line-height: 1.55; }
+
+    /* RULE CARDS */
+    .rule-grid { display: grid; gap: 10px; }
+    .rule-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #FFFFFF;
+      padding: 16px 18px;
+    }
+    .rule-num { font-size: 10px; font-weight: 700; color: var(--text-light); letter-spacing: 0.1em; }
+    .rule-title { font-size: 13.5px; font-weight: 700; color: var(--text-dark); margin: 2px 0 4px; }
+    .rule-sub { font-size: 12px; font-weight: 700; color: var(--brand-text); margin-bottom: 8px; }
+    .rule-body { font-size: 12.5px; color: var(--text-mid); line-height: 1.65; }
+    .rule-body p { margin-bottom: 6px; }
+    .rule-body p:last-child { margin-bottom: 0; }
+
+    /* CONCEPT REFERENCE LIST */
+    .idea-item {
+      display: flex;
+      gap: 11px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .idea-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .idea-num {
+      flex-shrink: 0;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--brand-text);
+      margin-top: 2px;
+      min-width: 18px;
+    }
+    .idea-name { font-size: 13px; font-weight: 700; color: var(--text-dark); margin-bottom: 3px; }
+    .idea-desc { font-size: 12.5px; color: var(--text-mid); line-height: 1.6; }
+
+    /* FOLD (섹션 아코디언) */
+    .fold {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .fold[open] { border-color: var(--brand-line); }
+    .fold-summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .fold-summary::-webkit-details-marker { display: none; }
+    .fold-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      color: var(--brand-text);
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fold[open] .fold-icon { background: var(--brand-pale); color: var(--brand-text); border: 1px solid var(--brand-line); }
+    .fold-title { flex: 1; font-size: 13.5px; font-weight: 700; color: var(--text-dark); }
+    .fold-badge {
+      flex-shrink: 0;
+      background: var(--brand);
+      color: var(--on-brand);
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 10px;
+      border: 1px solid var(--brand-line);
+    }
+    .fold-count { flex-shrink: 0; font-size: 11px; font-weight: 600; color: var(--text-light); }
+    .fold-chevron { font-size: 11px; color: var(--text-light); transition: transform 0.2s; flex-shrink: 0; }
+    .fold[open] .fold-chevron { transform: rotate(180deg); color: var(--brand-text); }
+    .fold-body { padding: 16px; border-top: 1px solid var(--border); background: var(--cream); }
+    .fold-group { display: flex; flex-direction: column; gap: 10px; }
+
+    @media (max-width: 480px) {
+      .brief-line { font-size: 16.5px; }
+      .brief-protocol { font-size: 14.5px; }
+      .brief-box { padding: 18px 20px; }
+      .step-cols { grid-template-columns: 1fr; gap: 12px; }
+      .angle-item { padding: 10px 11px 13px; }
+      .angle-desc { font-size: 11.5px; }
+      .thumb-cap { padding: 9px 10px 11px; }
+      .thumb-cap-desc { font-size: 11px; }
+      .prod-photo-cap { font-size: 10px; }
+      .guard-box { padding: 16px 18px; }
+    }
+
+    /* MUST / RECOMMEND */
+    .must-list { display: grid; gap: 10px; margin-bottom: 24px; }
+    .must-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .must-icon { font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+    .must-item strong { color: var(--text-dark); }
+
+    /* CONCEPT ACCORDION */
+    .concept-intro {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+    .concept-pick {
+      display: inline-flex;
+      align-items: center;
+      background: var(--brand);
+      color: var(--on-brand);
+      border: 1px solid var(--brand-line);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 10px;
+      margin: 0 2px;
+    }
+    .concept-list {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .concept {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .concept[open] { border-color: var(--brand-line); }
+    .concept-summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .concept-summary::-webkit-details-marker { display: none; }
+    .concept-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--tag-bg);
+      color: var(--brand-text);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .concept[open] .concept-num { background: var(--brand); color: var(--on-brand); border: 1px solid var(--brand-line); }
+    .concept-name { flex: 1; font-size: 13.5px; font-weight: 700; color: var(--text-dark); }
+    .concept-chevron { font-size: 11px; color: var(--text-light); transition: transform 0.2s; flex-shrink: 0; }
+    .concept[open] .concept-chevron { transform: rotate(180deg); color: var(--brand-text); }
+    .concept-body { padding: 2px 16px 18px; border-top: 1px solid var(--border); }
+    .concept-steps {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      counter-reset: step;
+    }
+    .concept-steps > li {
+      counter-increment: step;
+      display: flex;
+      gap: 10px;
+      font-size: 12.5px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .concept-steps > li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      margin-top: 1px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      color: var(--brand-text);
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .concept-quotes, .concept-refs {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border);
+    }
+    .concept-quotes-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--brand-text);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .quote-chip {
+      background: var(--tag-bg);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 12.5px;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .quote-chip:last-child { margin-bottom: 0; }
+    .concept-ref-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-decoration: none;
+      padding: 9px 12px;
+      margin-bottom: 6px;
+      min-height: 38px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .concept-ref-link:last-child { margin-bottom: 0; }
+    .concept-ref-link:active { background: var(--tag-bg); }
+    .concept-ref-link::after {
+      content: '→';
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--brand-text);
+    }
+
+    .sub-list { margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; color: var(--text-mid); line-height: 1.6; }
+    .sub-list li { margin-bottom: 4px; }
+    .sub-list li:last-child { margin-bottom: 0; }
+
+    .key-msg-box {
+      background: var(--brand);
+      border: 1px solid var(--brand-line);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 20px;
+    }
+    .key-msg-title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.62);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .key-msg-item {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .key-msg-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .key-msg-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.62);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .key-msg-text {
+      font-size: 13px;
+      color: var(--on-brand);
+      line-height: 1.7;
+    }
+    .key-msg-text strong { color: var(--on-brand-accent); }
+    .key-msg-item .sub-list { color: rgba(255,255,255,0.9); font-size: 12.5px; margin-top: 6px; padding-left: 16px; }
+    .key-msg-item .sub-list li { margin-bottom: 5px; }
+    .nb { white-space: nowrap; }
+    /* 깊게 중첩된 링크 라벨에서는 묶음을 풀어 가로 넘침 방지 */
+    .concept-ref-link .nb, .concept-name .nb { white-space: normal; }
+
+    .rec-list {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .rec-title { font-size: 12px; font-weight: 700; color: var(--brand-text); margin-bottom: 12px; }
+    .rec-item { font-size: 12.5px; color: var(--text-mid); padding: 5px 0; border-bottom: 1px solid var(--border); line-height: 1.6; }
+    .rec-item:last-child { border-bottom: none; }
+
+    /* HASHTAG */
+    .hashtag-section { margin-top: 20px; }
+    .hashtag-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-mid);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hashtag-label .required { background: var(--brand); color: var(--on-brand); font-size: 10px; padding: 2px 7px; border-radius: 10px; border: 1px solid var(--brand-line); }
+    .hashtag-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .tag-group-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .hashtag {
+      font-size: 13px;
+      padding: 10px 14px;
+      border-radius: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .hashtag:active { opacity: 0.6; }
+    .hashtag.req { background: var(--brand); color: var(--on-brand); border: 1px solid var(--brand-line); }
+    .hashtag.req::after { content: '⎘'; font-size: 11px; color: rgba(255,255,255,0.55); }
+
+    /* COLLAB */
+    .collab-box {
+      background: var(--brand);
+      border: 1px solid var(--brand-line);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+    .collab-title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.62);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .collab-account {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .collab-account:last-child { border-bottom: none; }
+    .collab-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.85); flex-shrink: 0; }
+    .collab-handle {
+      font-size: 13.5px;
+      color: var(--on-brand);
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .collab-handle::after { content: '⎘'; font-size: 11px; color: rgba(255,255,255,0.5); }
+    .collab-note { margin-left: auto; font-size: 10px; color: rgba(255,255,255,0.55); }
+
+    /* WARNING */
+    .warning-box {
+      background: #FFFBF0;
+      border: 1px solid #F0D080;
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 12.5px;
+      color: #7A5A00;
+      line-height: 1.7;
+      margin-top: 16px;
+    }
+    .warning-box strong { color: #5A3D00; }
+
+    .ref-note { font-size: 11px; color: var(--text-light); margin-bottom: 4px; }
+
+    /* APPLICATION FORM */
+    .form-group { margin-bottom: 18px; }
+
+    /* 제품 라인 선택 */
+    .line-pick { display: grid; gap: 10px; }
+    .line-opt {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: #FFFFFF;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .line-opt input[type="radio"] {
+      margin-top: 2px;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      accent-color: var(--brand);
+    }
+    .line-opt:has(input:checked) {
+      border-color: var(--brand);
+      background: var(--brand-pale);
+    }
+    .line-opt-name {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .line-opt-items {
+      display: block;
+      font-size: 12.5px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .form-label .req { color: #C0504D; margin-left: 2px; }
+    .form-label .opt { font-size: 11px; color: var(--text-light); font-weight: 500; margin-left: 4px; }
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--text-dark);
+      background: white;
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--brand-line);
+    }
+    .form-input[readonly] { background: var(--warm-white); }
+    .form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+    .form-row-zip { display: flex; gap: 8px; }
+    .form-row-zip .form-input { flex: 1; min-width: 0; }
+    .zip-search-btn {
+      padding: 0 18px;
+      background: var(--text-dark);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .zip-search-btn:active { opacity: 0.8; }
+
+    .note-box {
+      border: 1px dashed var(--brand-line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      background: var(--cream);
+    }
+    .note-box-title { font-size: 13px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+    .note-box ul { padding-left: 18px; font-size: 12.5px; color: var(--text-mid); line-height: 1.8; }
+
+    .agree-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 20px 0;
+      font-size: 12.5px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      cursor: pointer;
+    }
+    .agree-row input[type="checkbox"] {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      accent-color: var(--brand);
+    }
+    .agree-row strong { color: var(--brand); font-weight: 700; }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--text-dark);
+      color: white;
+      border: none;
+      border-radius: 14px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .submit-btn:active { opacity: 0.85; }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* SETTLEMENT (v2) */
+    .settlement-lead { font-size: 13px; color: var(--text-mid); margin-bottom: 20px; line-height: 1.7; }
+    .settle-tag-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-mid);
+      background: var(--tag-bg);
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    .settle-doc-text { font-size: 13px; color: var(--text-mid); margin: 0 0 20px; }
+    .settle-copy-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      font-size: 13.5px;
+      color: var(--text-dark);
+    }
+    .settle-copy-box span { word-break: break-all; }
+    .settle-copy-btn {
+      flex-shrink: 0;
+      background: var(--text-dark);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .settle-copy-btn:active { opacity: 0.8; }
+
+    /* DIVIDER */
+    .divider { height: 1px; background: var(--border); margin: 24px 0; }
+
+    /* COPY TOAST */
+    .copy-toast {
+      position: fixed;
+      bottom: max(32px, env(safe-area-inset-bottom, 32px));
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background: rgba(30,42,58,0.94);
+      color: white;
+      font-size: 13px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--brand);
+      border-top: 1px solid var(--brand-line);
+      color: rgba(255,255,255,0.62);
+      text-align: center;
+      padding: 36px 32px;
+      padding-bottom: max(36px, env(safe-area-inset-bottom, 36px));
+      font-size: 11.5px;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+    .footer strong { color: var(--on-brand); }
+
+    /* KOREAN LINE-BREAKING — 마지막 줄에 단어 하나만 남는 것 방지 */
+    .about-lead, .about-item-desc, .concept-intro, .key-msg-text, .quote-chip,
+    .sub-list li, .rec-item, .must-item > div, .info-row, .ref-note,
+    .warning-box, .collab-note {
+      text-wrap: pretty;
+    }
+    .section-title, .header-title, .concept-name, .key-msg-badge,
+    .concept-quotes-label, .rec-title, .about-item-title, .concept-ref-link {
+      text-wrap: balance;
+    }
+
+    @media (max-width: 480px) {
+      .section { padding: 36px 20px; }
+      .section-title { font-size: 18px; }
+      .section-label { font-size: 9.5px; }
+      .about-lead { font-size: 13px; }
+      .info-box { padding: 20px; }
+      .info-row { font-size: 13px; }
+      .info-key { min-width: 62px; font-size: 11px; }
+      .product-name { font-size: 14px; }
+      .key-msg-box { padding: 18px 20px; }
+      .key-msg-text { font-size: 12.5px; }
+      .must-item { font-size: 12.5px; padding: 12px 14px; }
+      .hashtag { font-size: 12px; padding: 10px 12px; }
+      .collab-handle { font-size: 13px; }
+      .footer { padding: 28px 20px; font-size: 11px; padding-bottom: max(28px, env(safe-area-inset-bottom, 28px)); }
+
+      /* 자간 — 좁은 화면에서 한 줄에 더 담기도록 미세 조정 */
+      body { letter-spacing: -0.01em; }
+      .key-msg-badge { font-size: 10.5px; letter-spacing: 0.04em; }
+      .concept-quotes-label { letter-spacing: 0.03em; }
+      .section-label { letter-spacing: 0.18em; }
+      .header-eyebrow { letter-spacing: 0.24em; }
+
+      /* 정렬 — 들여쓰기·여백 축소 */
+      .sub-list { padding-left: 16px; }
+      .quote-chip { font-size: 12px; padding: 9px 11px; }
+      .concept-body { padding: 2px 14px 16px; }
+
+      /* 데스크톱용 수동 줄바꿈 해제 */
+      .pc-br { display: none; }
+
+      /* 터치 영역 44px 확보 */
+      .concept-ref-link { min-height: 44px; }
+    }
+
+    @media (max-width: 360px) {
+      .section { padding: 28px 14px; }
+      .key-msg-box { padding: 16px 16px; }
+      .key-msg-text { font-size: 12px; }
+      .quote-chip { font-size: 11.5px; padding: 8px 10px; }
+      .sub-list { padding-left: 15px; font-size: 12px; }
+      .concept-summary { padding-left: 12px; padding-right: 12px; }
+      .fold-summary { padding-left: 12px; padding-right: 12px; }
+      .fold-body { padding: 14px 12px; }
+      .prod-photo-grid { gap: 6px; }
+      .prod-photo-item { padding: 6px 4px 8px; }
+      .prod-photo-cap { font-size: 9.5px; }
+      .angle-grid, .thumb-grid { gap: 8px; }
+      .section-title { font-size: 17px; }
+      .hashtag { font-size: 11.5px; padding: 9px 10px; }
+      .about-item { padding: 14px 16px; }
+      .info-box { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- BANNER -->
+<div class="banner-wrap">
+  <img src="image/banner.png" alt="LOYR 배너" width="1270" height="707">
+  <div class="banner-overlay">
+    <div class="header-eyebrow">Influencer Guideline</div>
+    <div class="header-title-row">
+      <span class="header-title">로이어 가이드라인</span>
+      <span class="header-fee">B Type &middot; 10만원</span>
+    </div>
+    <div class="header-sub">LOYR × Creator Campaign</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <div class="section-label">About Brand</div>
+  <p class="about-lead">
+    <strong style="display:block;font-family:'Noto Sans KR',sans-serif;font-size:17px;font-weight:700;letter-spacing:0.03em;color:var(--text-dark);line-height:1.45;margin-bottom:6px;">FORMULA-LED RECOVERY</strong>
+    <span style="display:block;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--brand-text);margin-bottom:16px;">Recovery starts with the right formula.</span>
+    <strong style="display:block;color:var(--text-dark);font-weight:700;font-size:14px;line-height:1.6;margin-bottom:8px;">정교하게 설계하고, 감각적으로 표현하는 컨템포러리 더마</strong>
+    LOYR는 피부 고민에 필요한 솔루션을 정교하게 설계하고, 더마의 전문성을 감각적인 언어로 새롭게 풀어냅니다.
+  </p>
+  <div class="brand-img-wrap">
+    <img src="image/brand.png" alt="LOYR 브랜드">
+  </div>
+  <div class="about-grid">
+    <div class="about-item">
+      <div class="about-item-title"><span style="letter-spacing:0.06em;">ENGINEERED FOR RECOVERY</span></div>
+      <div class="about-item-desc">
+        <strong style="display:block;color:var(--text-dark);font-weight:700;margin-bottom:6px;">더 많이 더하기보다, 피부 고민에 필요한 핵심을 찾습니다.</strong>
+        성분&nbsp;·&nbsp;함량&nbsp;·&nbsp;조합&nbsp;·&nbsp;제형을 하나의 회복 솔루션으로 설계합니다.
+      </div>
+    </div>
+    <div class="about-item">
+      <div class="about-item-title"><span style="letter-spacing:0.06em;">SKIN ENGINEERING FOR RECOVERY</span></div>
+      <div class="about-item-desc">
+        <strong style="display:block;color:var(--text-dark);font-weight:700;margin-bottom:6px;">성분만 나열하는 브랜드가 아닙니다.</strong>
+        피부에 꼭 필요한 솔루션을 연구하고, 제품이 고객에게 닿는 순간까지 안정적인 품질과 경험을 설계합니다.
+      </div>
+    </div>
+    <div class="about-item">
+      <div class="about-item-title"><span style="letter-spacing:0.06em;">FORMULA IS DESIGNED</span></div>
+      <div class="about-item-desc">
+        <strong style="display:block;color:var(--text-dark);font-weight:700;">핵심 성분을 찾고, 최적의 함량과 조합으로 회복 솔루션을 구현합니다.</strong>
+      </div>
+    </div>
+  </div>
+  <a href="https://loyr.co.kr/index.html" target="_blank" rel="noopener" class="brand-link-btn">브랜드 바로가기 →</a>
+</div>
+
+<!-- 캠페인 개요 -->
+<div class="section">
+  <div class="section-label">Campaign Info</div>
+  <div class="section-title">캠페인 개요</div>
+  <div class="info-box">
+    <div class="info-box-title">Schedule & Details</div>
+    <div class="info-row">
+      <div class="info-key">업로드</div>
+      <div class="info-val"><span style="font-size:11px;color:rgba(255,255,255,0.58)">⚠️ 일정 미준수 시 고료 지급 불가</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-key">형식</div>
+      <div class="info-val">릴스 (Reels)</div>
+    </div>
+    <div class="info-row">
+      <div class="info-key">공동작업자</div>
+      <div class="info-val"><strong>필수</strong></div>
+    </div>
+    <div class="info-row">
+      <div class="info-key">2차 활용</div>
+      <div class="info-val">동의</div>
+    </div>
+    <div class="info-row">
+      <div class="info-key">업로드 유지</div>
+      <div class="info-val">3개월</div>
+    </div>
+  </div>
+
+  <div class="key-msg-box" style="margin-top:20px;">
+    <div class="key-msg-title">캠페인 목적&nbsp;·&nbsp;<span class="nb">로이어 그랜드 론칭</span></div>
+    <div class="key-msg-text" style="margin-top:-8px;margin-bottom:4px;">로이어(LOYR)는 이번에 <strong>새롭게 출시되는 브랜드</strong>입니다. 이번 캠페인은 브랜드의 <strong>첫 협업</strong>으로, 크리에이터분들이 <strong>블루 펩타이드 라인을 가장 먼저 만나보고</strong> 소개하는 자리입니다.</div>
+    <div class="key-msg-item">
+      <div class="key-msg-badge">캠페인 배경</div>
+      <div class="key-msg-text">로이어 그랜드 론칭&nbsp;—&nbsp;<strong>Blue Peptide, Engineered</strong></div>
+    </div>
+    <div class="key-msg-item">
+      <div class="key-msg-badge">핵심 요청</div>
+      <div class="key-msg-text"><strong>피부과 시술 없이</strong>, 매일 <strong>3-STEP</strong>으로 관리하는 <span class="nb">모공&amp;트러블 흔적</span> 케어 루틴</div>
+    </div>
+  </div>
+
+  <!-- 제공 제품 -->
+  <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin-bottom:10px;letter-spacing:0.05em;">제공 제품</div>
+  <div class="prod-pick-note">아래 <strong>2개 라인 중 택 1</strong>로 제공됩니다. 채널 성격에 맞춰 브랜드에서 선정 안내와 함께 전달드립니다.</div>
+  <div class="product-box">
+    <div class="prod-photo-grid">
+      <div class="prod-photo-item">
+        <img src="image/product-01.png" alt="블루 펩타이드 딥 클렌징 폼" loading="lazy">
+        <div class="prod-photo-step">STEP 01</div>
+        <div class="prod-photo-cap">딥 클렌징 폼</div>
+      </div>
+      <div class="prod-photo-item">
+        <img src="image/product-02.png" alt="블루 펩타이드 카밍 세럼" loading="lazy">
+        <div class="prod-photo-step">STEP 02</div>
+        <div class="prod-photo-cap">카밍 세럼</div>
+      </div>
+      <div class="prod-photo-item">
+        <img src="image/product-03.png" alt="블루 펩타이드 세라마이드 캡슐 크림" loading="lazy">
+        <div class="prod-photo-step">STEP 03</div>
+        <div class="prod-photo-cap">세라마이드<br>캡슐 크림</div>
+      </div>
+    </div>
+    <div class="prod-option">
+      <div class="prod-option-head"><span class="prod-option-num">1</span> 블루펩타이드 라인</div>
+      <div class="prod-option-items"><span class="nb">블루 펩타이드 딥 클렌징 폼</span> + <span class="nb">카밍 세럼</span> + <span class="nb">세라마이드 캡슐 크림</span> <span style="color:var(--text-mid);">(3종)</span></div>
+      <div class="prod-option-desc"><span><span class="nb">수분·진정</span> + <span class="nb">피부결/트러블 흔적 케어</span> 중심의 데일리 스킨케어 라인</span></div>
+    </div>
+    <div class="prod-or">OR</div>
+    <div class="prod-option">
+      <div class="prod-option-head"><span class="prod-option-num">2</span> 세럼 라인</div>
+      <div class="prod-option-items"><span class="nb">세라마이드 캡슐크림</span> + <span class="nb">NAD+ 뮤신 볼륨세럼</span></div>
+      <div class="prod-option-desc"><span><span class="nb">탄력·볼륨</span> + <span class="nb">광채 케어</span>에 집중한 스킨케어 라인</span></div>
+    </div>
+    <a href="https://loyr.co.kr/product/list.html?cate_no=45" target="_blank" rel="noopener" class="product-link-btn">제품 보러가기 →</a>
+  </div>
+</div>
+
+<!-- 제작 가이드 -->
+<div class="section">
+  <div class="section-label">Content Guide</div>
+  <div class="section-title">제작 가이드</div>
+
+  <div class="brief-box">
+    <div class="brief-label">One-line Brief</div>
+    <div class="brief-line">모공 <em>속</em> 비우고&mdash;<br>모공 <em>결</em> 채우고&mdash;<br>모공 <em>벽</em> 세우는&mdash;</div>
+    <div class="brief-protocol">3-STEP PORE PROTOCOL</div>
+  </div>
+
+  <div class="key-msg-box">
+    <div class="key-msg-title">핵심 요청사항</div>
+    <div class="key-msg-text" style="margin-top:-8px;"><strong>피부과 시술 없이</strong>, 매일 <strong>3-STEP</strong>으로 관리하는 <span class="nb">모공&amp;트러블 흔적</span> 케어 루틴을 보여주세요.</div>
+  </div>
+
+  <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin:24px 0 10px;letter-spacing:0.03em;">&#10004; 영상 및 캡션 필수 포함</div>
+  <div class="must-list">
+    <div class="must-item">
+      <div class="must-icon">&#127916;</div>
+      <div><strong>[영상]</strong> 클렌징 &rarr; 세럼 &rarr; 크림으로 이어지는 <strong>3-STEP 루틴</strong>과 각 제품의 제형&middot;텍스처가 드러나도록 담아주세요.</div>
+    </div>
+    <div class="must-item">
+      <div class="must-icon">&#9997;&#65039;</div>
+      <div><strong>[캡션]</strong> 제품명과 핵심 효능을 정확히 적어주시고, 모공&middot;트러블 흔적 케어에 대한 실제 사용감 위주로 자유롭게 작성해 주세요. <strong>캡션 최상단 첫 줄에 <span class="nb">@loyr_kr</span></strong>을 표기해 주세요.</div>
+    </div>
+    <div class="must-item">
+      <div class="must-icon">&#128279;</div>
+      <div><strong>[공동작업자]</strong> <span class="nb">@loyr_kr</span> 초대 <strong>필수</strong>입니다. 업로드 시 '공동 작업자 초대' 기능으로 LOYR 공식 계정을 초대해 주세요.</div>
+    </div>
+  </div>
+
+  <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin:24px 0 10px;letter-spacing:0.03em;">&#9654; 상세 가이드 <span style="font-weight:500;color:var(--text-light);">— 항목을 탭하여 펼쳐보세요</span></div>
+  <div class="concept-list">
+    <details class="concept" open>
+      <summary class="concept-summary">
+        <span class="concept-num">1</span>
+        <span class="concept-name">제품 상세&nbsp;·&nbsp;<span class="nb">3-STEP PORE PROTOCOL</span></span>
+        <span class="concept-chevron">&#8964;</span>
+      </summary>
+      <div class="concept-body">
+        <div class="concept-intro">각 제품의 <strong>STEP 역할</strong>과 <strong>핵심 효능</strong>을 정확히 확인하신 뒤 소구해 주세요.</div>
+
+        <div style="margin-top:14px;">
+          <div class="step-card">
+            <div class="step-badge">STEP 01&nbsp;·&nbsp;PORE PEEL</div>
+            <div class="step-prod-en">Blue Peptide Deep Cleansing Foam</div>
+            <div class="step-prod">블루 펩타이드 딥 클렌징 폼</div>
+            <div class="step-meta">150ml&nbsp;/&nbsp;18,000원</div>
+            <div class="step-lead">과도한 피지와 노폐물, 묵은 각질을 깨끗하게 세정해 답답한 모공을 매끈하게 비우는 첫 단계</div>
+            <div class="step-feat"><strong>AHA&middot;BHA&middot;PHA 트리플 각질 케어</strong><span>묵은 각질과 모공 속 노폐물을 자극 없이 깨끗하게 클렌징해 주어 매끈한 피부결로 케어해 줍니다.</span></div>
+            <div class="step-feat"><strong>Anti Sebum P로 번들거림 밸런스 케어</strong><span>과다 피지와 유분 밸런스를 관리해 산뜻하고 깔끔한 피부 컨디션을 유지해줍니다.</span></div>
+            <div class="step-feat"><strong>트리플 펩타이드 캡슐의 모공 케어</strong><span>블루 캡슐에 트리플 펩타이드 성분을 담아 피부 모공 면적 및 깊이를 개선해 탄탄한 피부로 케어해 줍니다.</span></div>
+            <div class="step-cols">
+              <div class="step-col">
+                <div class="step-col-label">주요 성분</div>
+                <ul>
+                  <li><strong>Triple Peptide 1%</strong></li>
+                  <li>Salicylic Acid 0.49%</li>
+                  <li>Anti Sebum P 1%</li>
+                </ul>
+              </div>
+              <div class="step-col">
+                <div class="step-col-label">임상</div>
+                <ul>
+                  <li>모공 속 노폐물 세정</li>
+                  <li>피지 세정력</li>
+                  <li>각질 개선</li>
+                  <li>모공 수&middot;면적&middot;깊이 개선</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tags">#모공필클렌저 #블루캡슐폼 #쫀광클폼</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">STEP 02&nbsp;·&nbsp;PORE RESET</div>
+            <div class="step-prod-en">Blue Peptide Calming Serum</div>
+            <div class="step-prod">블루 펩타이드 카밍 세럼</div>
+            <div class="step-meta">30ml&nbsp;/&nbsp;27,000원</div>
+            <div class="step-lead">도드라져 보이는 모공과 거칠어진 피부결, 트러블 이후 남아 보이는 흔적까지 집중 케어해 매끈하고 균일한 피부 컨디션으로 리셋</div>
+            <div class="step-feat"><strong>트라넥사믹애씨드&middot;나이아신아마이드 흔적 집중 케어</strong><span>피부 트러블과 붉은 흔적을 집중적으로 케어해 깨끗하고 균일한 피부톤으로 가꿔줍니다.</span></div>
+            <div class="step-feat"><strong>Zinc PCA &amp; 블루 펩타이드의 모공 피지 케어</strong><span>과다 피지를 잡아주고 블루 펩타이드가 모공을 케어해 주어 번들거림 없이 산뜻하고 매끈한 피부로 케어해줍니다.</span></div>
+            <div class="step-feat"><strong>판테놀&middot;알란토인 진정 리페어 케어</strong><span>민감해진 피부를 편안하게 진정시키고 촉촉한 보습감으로 건강한 피부 장벽 케어를 도와줍니다.</span></div>
+            <div class="step-cols">
+              <div class="step-col">
+                <div class="step-col-label">주요 성분</div>
+                <ul>
+                  <li><strong>Triple Peptide 3%</strong></li>
+                  <li>Tranexamic Acid 3%</li>
+                  <li>Niacinamide 2%</li>
+                </ul>
+              </div>
+              <div class="step-col">
+                <div class="step-col-label">임상</div>
+                <ul>
+                  <li>논코메도제닉 <span class="nb">(여드름성 피부 사용 적합)</span></li>
+                  <li>손상된 피부 진정</li>
+                  <li>열자극 피부 진정</li>
+                  <li>모공 수&middot;면적&middot;깊이 개선</li>
+                  <li>기미 및 색소침착 개선</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tags">#모공리셋세럼 #블루펩타이드세럼 #흔적진정세럼 #화잘먹세럼</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">STEP 03&nbsp;·&nbsp;PORE BARRIER</div>
+            <div class="step-prod-en">Blue Peptide Ceramide Capsule Cream</div>
+            <div class="step-prod">블루 펩타이드 세라마이드 캡슐 크림</div>
+            <div class="step-meta">50ml&nbsp;/&nbsp;32,000원</div>
+            <div class="step-lead">트러블로 민감해지고 무너지기 쉬운 피부에 보습을 더해 흔적부터 피부 장벽까지 탄탄하게 케어</div>
+            <div class="step-feat"><strong>세라마이드 캡슐 장벽 보습 케어</strong><span>촉촉한 세라마이드 캡슐이 피부 장벽을 탄탄하게 케어해 수분 손실 없이 건강한 피부 컨디션을 유지해줍니다.</span></div>
+            <div class="step-feat"><strong>히알루론산&middot;펩타이드 수분 탄력 케어</strong><span>피부 속까지 깊은 보습과 탄력을 채워 건조함 없이 탱탱한 피부로 가꿔줍니다.</span></div>
+            <div class="step-feat"><strong>판테놀&middot;글루타치온 윤광 진정 케어</strong><span>민감해진 피부를 편안하게 진정시키고 맑고 자연스러운 윤광 피부를 완성해줍니다.</span></div>
+            <div class="step-cols">
+              <div class="step-col">
+                <div class="step-col-label">주요 성분</div>
+                <ul>
+                  <li><strong>Triple Peptide 1%</strong></li>
+                  <li>Ceramide 1%</li>
+                  <li>Niacinamide 2%</li>
+                </ul>
+              </div>
+              <div class="step-col">
+                <div class="step-col-label">임상</div>
+                <ul>
+                  <li>논코메도제닉 <span class="nb">(여드름성 피부 사용 적합)</span></li>
+                  <li>모공 개선</li>
+                  <li>기미 및 색소침착 개선</li>
+                  <li>피부 각질층 20층 보습 개선</li>
+                  <li>외부 자극에 의한 손상된 피부 진정 및 장벽 개선</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tags">#모공장벽크림 #블루펩타이드크림 #애프터케어크림</div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="concept">
+      <summary class="concept-summary">
+        <span class="concept-num">2</span>
+        <span class="concept-name">촬영 가이드&nbsp;·&nbsp;<span class="nb">기본 앵글 4컷</span></span>
+        <span class="concept-chevron">&#8964;</span>
+      </summary>
+      <div class="concept-body">
+        <div class="concept-intro">아래 4가지 앵글은 콘텐츠에 <strong>기본적으로 포함</strong>해 주세요.</div>
+        <div class="angle-grid" style="margin-top:14px;">
+          <div class="angle-item">
+            <div class="angle-thumb">
+              <img src="image/angle-01.png" alt="제품 단독 컷 예시" loading="lazy">
+              <span class="angle-thumb-tag">예시</span>
+            </div>
+            <div class="angle-num">CUT 1</div>
+            <div class="angle-name">제품 단독 컷</div>
+            <div class="angle-desc">브랜드 로고가 정면으로 오도록 배치하고, 블루 컬러가 포인트 되게 촬영해 주세요.</div>
+          </div>
+          <div class="angle-item">
+            <div class="angle-thumb">
+              <img src="image/angle-02.png" alt="제형 후킹 컷 예시" loading="lazy">
+              <span class="angle-thumb-tag">예시</span>
+            </div>
+            <div class="angle-num">CUT 2</div>
+            <div class="angle-name">제형 후킹 컷</div>
+            <div class="angle-desc">제품 특유의 질감과 제형이 잘 보이도록 근접 촬영해 주세요.</div>
+          </div>
+          <div class="angle-item">
+            <div class="angle-thumb">
+              <img src="image/angle-03.png" alt="피부 고민 컷 예시" loading="lazy">
+              <span class="angle-thumb-tag">예시</span>
+            </div>
+            <div class="angle-num">CUT 3</div>
+            <div class="angle-name">피부 고민 컷</div>
+            <div class="angle-desc">트러블, 모공, 흔적 등 피부 고민을 강조하여 표현해 주세요.</div>
+          </div>
+          <div class="angle-item">
+            <div class="angle-thumb">
+              <img src="image/angle-04.png" alt="비포 애프터 컷 예시" loading="lazy">
+              <span class="angle-thumb-tag">예시</span>
+            </div>
+            <div class="angle-num">CUT 4</div>
+            <div class="angle-name">Before / After 컷</div>
+            <div class="angle-desc">제품 사용 후 달라진 피부 표현을 강조하여 표현해 주세요.</div>
+          </div>
+        </div>
+        <div class="ref-note" style="margin-top:12px;">&bull; 위 예시 이미지는 <strong>앵글&middot;구도 참고용</strong>입니다. 동일하게 따라 하실 필요는 없으며, 채널 톤에 맞게 연출해 주세요.</div>
+      </div>
+    </details>
+
+    <details class="concept">
+      <summary class="concept-summary">
+        <span class="concept-num">3</span>
+        <span class="concept-name">콘텐츠 소재 참고&nbsp;·&nbsp;<span class="nb">바이럴 콘셉트 5</span></span>
+        <span class="concept-chevron">&#8964;</span>
+      </summary>
+      <div class="concept-body">
+        <div class="concept-intro"><strong>3-STEP PORE PROTOCOL</strong>과 제품 USP를 바탕으로 한 참고 아이디어입니다.</div>
+        <div style="margin-top:12px;">
+          <div class="idea-item">
+            <div class="idea-num">01</div>
+            <div>
+              <div class="idea-name">모공 속&middot;결&middot;벽 3-STEP</div>
+              <div class="idea-desc">클렌징으로 비우고, 세럼으로 결을 리셋한 뒤 크림으로 모공 장벽까지 잇는 데일리 프로토콜</div>
+            </div>
+          </div>
+          <div class="idea-item">
+            <div class="idea-num">02</div>
+            <div>
+              <div class="idea-name">진정을 넘어 모공&middot;트러블 애프터케어</div>
+              <div class="idea-desc">진정에서 끝내지 않고 피지, 거친 피부결, 트러블 흔적까지 함께 살피는 단계적 리셋 케어</div>
+            </div>
+          </div>
+          <div class="idea-item">
+            <div class="idea-num">03</div>
+            <div>
+              <div class="idea-name">블루 텍스처 강조</div>
+              <div class="idea-desc">블루 제형의 색&middot;질감&middot;흡수감을 감각적으로 해석하는 비주얼 중심 콘텐츠</div>
+            </div>
+          </div>
+          <div class="idea-item">
+            <div class="idea-num">04</div>
+            <div>
+              <div class="idea-name">여드름성 피부를 고려한 루틴</div>
+              <div class="idea-desc">논코메도제닉 시험을 완료한 세럼과 크림을 중심으로 부담을 덜어낸 모공 흔적 루틴</div>
+            </div>
+          </div>
+          <div class="idea-item">
+            <div class="idea-num">05</div>
+            <div>
+              <div class="idea-name">세럼-크림 쫀광 레이어링</div>
+              <div class="idea-desc">트러블 / 모공 / 흔적 피부도 가능한 화잘먹 치트키</div>
+            </div>
+          </div>
+        </div>
+        <div class="ref-note" style="margin-top:14px;">&bull; 위 내용은 필수 연출안이 아닌 <strong>콘텐츠 소재 참고용</strong>입니다. 크리에이터 채널의 톤과 방식에 맞게 자유롭게 재해석해 주세요.</div>
+      </div>
+    </details>
+
+    <details class="concept">
+      <summary class="concept-summary">
+        <span class="concept-num">4</span>
+        <span class="concept-name">썸네일 가이드&nbsp;·&nbsp;<span class="nb">커버 예시 4종</span></span>
+        <span class="concept-chevron">&#8964;</span>
+      </summary>
+      <div class="concept-body">
+        <div class="concept-intro">썸네일은 첫 노출에서 주목도를 결정합니다. <strong>핵심 소구 포인트가 한눈에 드러나게</strong> 제작해 주세요.</div>
+
+        <div class="thumb-grid" style="margin-top:14px;">
+          <div class="thumb-item">
+            <img src="image/thumb-01.png" alt="썸네일 예시 1 - 제형 클로즈업" loading="lazy">
+            <div class="thumb-cap">
+              <div class="thumb-cap-num">THUMB 1</div>
+              <div class="thumb-cap-name">제형 클로즈업 + 한 줄 카피</div>
+              <div class="thumb-cap-desc">제형이 흐르는 순간을 크게 담고, 짧은 구어체 카피로 시선을 잡는 유형</div>
+            </div>
+          </div>
+          <div class="thumb-item">
+            <img src="image/thumb-02.png" alt="썸네일 예시 2 - 고민 상황 공감형" loading="lazy">
+            <div class="thumb-cap">
+              <div class="thumb-cap-num">THUMB 2</div>
+              <div class="thumb-cap-name">피부 고민 공감형</div>
+              <div class="thumb-cap-desc">실제 피부 고민 상황을 솔직하게 보여주고, 굵은 자막으로 상황을 정의하는 유형</div>
+            </div>
+          </div>
+          <div class="thumb-item">
+            <img src="image/thumb-03.png" alt="썸네일 예시 3 - 비포애프터 분할" loading="lazy">
+            <div class="thumb-cap">
+              <div class="thumb-cap-num">THUMB 3</div>
+              <div class="thumb-cap-name">Before / After 분할</div>
+              <div class="thumb-cap-desc">상하 분할로 변화를 대비시키고, 해결 방법을 제목으로 제시하는 유형</div>
+            </div>
+          </div>
+          <div class="thumb-item">
+            <img src="image/thumb-04.png" alt="썸네일 예시 4 - 사용 후기형" loading="lazy">
+            <div class="thumb-cap">
+              <div class="thumb-cap-num">THUMB 4</div>
+              <div class="thumb-cap-name">추천&middot;후기형</div>
+              <div class="thumb-cap-desc">사용 후 피부 컨디션을 직접 보여주며 추천 멘트를 얹는 유형</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="must-list" style="margin-top:16px;margin-bottom:0;">
+          <div class="must-item">
+            <div class="must-icon">&#128247;</div>
+            <div><strong>[커버 지정]</strong> 제품이 명확히 식별되고 핵심 특장점이 직관적으로 보이는 컷을 커버로 지정해 주세요.</div>
+          </div>
+          <div class="must-item">
+            <div class="must-icon">&#9999;&#65039;</div>
+            <div><strong>[텍스트]</strong> 모바일에서도 읽히도록 <strong>짧고 선명하게</strong> 구성하고, 인물&middot;제품의 얼굴을 가리지 않도록 배치해 주세요.</div>
+          </div>
+        </div>
+
+        <div class="ref-note" style="margin-top:12px;">&bull; 위 예시 이미지는 <strong>썸네일 유형 참고용</strong>입니다. 문구와 연출은 자유롭게 구성해 주세요.</div>
+      </div>
+    </details>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="fold-group">
+  <details class="fold">
+    <summary class="fold-summary">
+      <span class="fold-icon">&#9878;</span>
+      <span class="fold-title">콘텐츠 가드레일</span>
+      <span class="fold-count">Must&nbsp;/&nbsp;Avoid</span>
+      <span class="fold-chevron">&#8964;</span>
+    </summary>
+    <div class="fold-body">
+  <div class="ref-note" style="margin-bottom:12px;">필수 요소와 금지 표현을 분리해 크리에이티브 자유도를 지켜주세요.</div>
+  <div class="guard-grid">
+    <div class="guard-box must">
+      <div class="guard-title">Must Include</div>
+      <div class="guard-item">제품명과 정확한 핵심 효능</div>
+      <div class="guard-item">실제 사용 장면&middot;텍스처&middot;루틴</div>
+      <div class="guard-item">필수 고지 및 광고/협찬 표기</div>
+      <div class="guard-item">지정 링크&middot;태그&middot;해시태그</div>
+      <div class="guard-item">브랜드 세이프티 기준</div>
+    </div>
+    <div class="guard-box avoid">
+      <div class="guard-title">Avoid</div>
+      <div class="guard-item">확인되지 않은 효능&middot;치료 표현</div>
+      <div class="guard-item">과도한 전후 비교와 보정 이미지</div>
+      <div class="guard-item">경쟁사 비방 또는 비교 단정</div>
+      <div class="guard-item">가격&middot;프로모션 임의 변경</div>
+      <div class="guard-item">제3자 저작권 침해 요소</div>
+    </div>
+  </div>
+    </div>
+  </details>
+
+  <details class="fold">
+    <summary class="fold-summary">
+      <span class="fold-icon">&#128203;</span>
+      <span class="fold-title">진행 규정</span>
+      <span class="fold-count">3</span>
+      <span class="fold-chevron">&#8964;</span>
+    </summary>
+    <div class="fold-body">
+  <div class="rule-grid">
+    <div class="rule-card">
+      <div class="rule-num">01</div>
+      <div class="rule-title">음원 사용 규정</div>
+      <div class="rule-sub">상업적 음원 사용 불가</div>
+      <div class="rule-body">
+        <p>유료 음원, 인기 차트곡, 레이블 소속 트랙 등 저작권 이슈 가능 음원은 사용할 수 없습니다.</p>
+        <p>플랫폼 제공 <strong>'오리지널 사운드'</strong> 또는 사용권이 확보된 무료 음원만 사용해 주세요.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num">02</div>
+      <div class="rule-title">브랜드 공동작업 요청</div>
+      <div class="rule-sub"><span class="nb">@loyr_kr</span> 초대 필수</div>
+      <div class="rule-body">
+        <p>게시물 업로드 시 <strong>'공동 작업자 초대'</strong> 기능으로 LOYR 공식 계정을 초대해 주세요.</p>
+        <p>단순 태그가 아닌 <strong>공동작업 요청</strong>이어야 브랜드 계정에도 함께 노출됩니다.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num">03</div>
+      <div class="rule-title">필수 표기 가이드</div>
+      <div class="rule-sub">협업 표기 및 계정 태그</div>
+      <div class="rule-body">
+        <p>캡션 <strong>최상단 첫 줄</strong>에 <span class="nb">@loyr_kr</span> 표기</p>
+        <p>필수 해시태그는 아래 <strong>해시태그</strong> 항목을 참고해 주세요.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ref-note" style="margin-top:12px;text-align:center;">&#8251; 공동작업 수락까지 시간이 소요될 수 있으니, 게시 전 요청 상태를 확인해 주세요.</div>
+    </div>
+  </details>
+
+  <details class="fold" open>
+    <summary class="fold-summary">
+      <span class="fold-icon">#</span>
+      <span class="fold-title">해시태그</span>
+      <span class="fold-badge">필수</span>
+      <span class="fold-chevron">&#8964;</span>
+    </summary>
+    <div class="fold-body">
+  <div class="hashtag-section" style="margin-top:0;">
+    <div class="hashtag-label">공통 해시태그 <span class="required">필수</span></div>
+    <div class="hashtag-wrap">
+      <div class="hashtag req">#유료광고</div>
+      <div class="hashtag req">#LOYR</div>
+      <div class="hashtag req">#로이어</div>
+    </div>
+
+    <div class="hashtag-label">제품별 해시태그 <span class="required">사용 제품만</span></div>
+    <div class="ref-note" style="margin-bottom:10px;">&bull; 콘텐츠에 사용한 제품의 태그를 함께 넣어주세요.</div>
+
+    <div class="tag-group-name">STEP 01&nbsp;·&nbsp;딥 클렌징 폼</div>
+    <div class="hashtag-wrap">
+      <div class="hashtag req">#모공필클렌저</div>
+      <div class="hashtag req">#블루캡슐폼</div>
+      <div class="hashtag req">#쫀광클폼</div>
+    </div>
+
+    <div class="tag-group-name">STEP 02&nbsp;·&nbsp;카밍 세럼</div>
+    <div class="hashtag-wrap">
+      <div class="hashtag req">#모공리셋세럼</div>
+      <div class="hashtag req">#블루펩타이드세럼</div>
+      <div class="hashtag req">#흔적진정세럼</div>
+      <div class="hashtag req">#화잘먹세럼</div>
+    </div>
+
+    <div class="tag-group-name">STEP 03&nbsp;·&nbsp;세라마이드 캡슐 크림</div>
+    <div class="hashtag-wrap">
+      <div class="hashtag req">#모공장벽크림</div>
+      <div class="hashtag req">#블루펩타이드크림</div>
+      <div class="hashtag req">#애프터케어크림</div>
+    </div>
+
+    <div class="ref-note">&bull; 그 외 협의된 개별 해시태그가 있는 경우 함께 추가해 주세요.</div>
+  </div>
+    </div>
+  </details>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="warning-box">
+    &#9888;&#65039; <strong>업로드 기한을 반드시 준수해주세요.</strong><br>
+    기간 내 업로드가 이루어지지 않을 경우 고료 지급이 불가합니다.<br><br>
+    <span class="nb">공동작업자 설정</span> 및 콘텐츠 2차 활용에 동의하는 것으로 간주됩니다.
+  </div>
+</div>
+
+<!-- 캠페인 신청 -->
+<div class="section">
+  <div class="section-label">Application</div>
+  <div class="section-title">캠페인 신청</div>
+
+  <form id="applicationForm" onsubmit="return submitApplication(event)">
+    <div class="form-group">
+      <label class="form-label">희망 제품 라인<span class="req">*</span></label>
+      <div class="line-pick">
+        <label class="line-opt">
+          <input type="radio" name="productLine" value="블루펩타이드 라인" required>
+          <span>
+            <span class="line-opt-name">① 블루펩타이드 라인</span>
+            <span class="line-opt-items">클렌징폼 + 카밍세럼 + <span class="nb">세라마이드 캡슐크림</span></span>
+          </span>
+        </label>
+        <label class="line-opt">
+          <input type="radio" name="productLine" value="세럼 라인" required>
+          <span>
+            <span class="line-opt-name">② 세럼 라인</span>
+            <span class="line-opt-items"><span class="nb">세라마이드 캡슐크림</span> + <span class="nb">NAD+ 뮤신 볼륨세럼</span></span>
+          </span>
+        </label>
+      </div>
+      <div class="ref-note" style="margin-top:8px;">• 최종 제품 라인은 채널 성격에 맞춰 브랜드에서 조정될 수 있습니다.</div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appName">이름<span class="req">*</span></label>
+      <input type="text" id="appName" name="name" class="form-input" placeholder="홍길동" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appInstagram">인스타그램 링크<span class="req">*</span></label>
+      <input type="text" id="appInstagram" name="instagram" class="form-input" placeholder="@username 또는 instagram.com/username" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appPhone">휴대폰<span class="req">*</span></label>
+      <input type="tel" id="appPhone" name="phone" class="form-input" placeholder="010-0000-0000" inputmode="numeric" pattern="[0-9\-]*" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appEmail">이메일<span class="opt">(선택)</span></label>
+      <input type="email" id="appEmail" name="email" class="form-input" placeholder="name@email.com">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appZip">우편번호<span class="req">*</span></label>
+      <div class="form-row-zip">
+        <input type="text" id="appZip" name="zipcode" class="form-input" placeholder="00000" inputmode="numeric" pattern="[0-9]*" maxlength="5" readonly required>
+        <button type="button" class="zip-search-btn" onclick="searchAddress()">주소 검색</button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appRoadAddress">배송지 주소<span class="req">*</span></label>
+      <input type="text" id="appRoadAddress" name="roadAddress" class="form-input" placeholder="도로명 주소" readonly required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appDetailAddress">상세 주소<span class="req">*</span></label>
+      <input type="text" id="appDetailAddress" name="detailAddress" class="form-input" placeholder="동·호수 등" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="appNote">요청사항<span class="opt">(선택)</span></label>
+      <textarea id="appNote" name="note" class="form-textarea" placeholder="배송 관련 요청사항을 적어주세요"></textarea>
+    </div>
+
+    <input type="hidden" id="appFullAddress" name="fullAddress">
+
+    <div class="warning-box">
+      ⚠️ <strong>배송지는 매 캠페인마다 새로 확인합니다.</strong><br>
+      오배송 방지를 위해 입력값을 다시 한번 체크해 주세요.
+    </div>
+
+    <div class="note-box" style="margin-top:16px;">
+      <div class="note-box-title">📌 업로드·정산 안내</div>
+      <ul>
+        <li>안내된 업로드 마감일까지 업로드 시 정산이 진행됩니다.</li>
+        <li>정산 자료 제출 후 <strong>2주</strong> 이내 지급됩니다.</li>
+      </ul>
+    </div>
+
+    <div class="note-box">
+      <div class="note-box-title">📌 콘텐츠 활용 안내</div>
+      <ul>
+        <li>콘텐츠는 브랜드 계정 내 스토리, 피드에 활용될 수 있습니다.</li>
+        <li>2차 활용에 동의해 주신 분들의 콘텐츠는 LOYR 공식 홈페이지, SNS, 플랫폼 등에 활용될 수 있는 점 참고 부탁드립니다.</li>
+      </ul>
+    </div>
+
+    <label class="agree-row">
+      <input type="checkbox" id="appAgree" name="agree" required>
+      <span>안내된 캠페인별 가이드라인 및 고료 조건을 확인했으며 이에 동의합니다.<br><br>제작된 콘텐츠는 브랜드 및 SIRIAI의 2차 활용에 동의합니다.<br><br><strong>(필수)</strong> 진행 제품은 브랜드 프로모션 상황에 따라 일부 변경될 수 있습니다.<br><br><strong>[필수]</strong> 캠페인 선정 후 개인 변심 및 일방적인 취소는 불가하며, 취소 시 <strong>제공된 제품 비용이 발생할 수 있음</strong>에 동의합니다.</span>
+    </label>
+
+    <button type="submit" class="submit-btn">로이어 캠페인 지원서 제출하기</button>
+  </form>
+</div>
+
+<!-- 정산 -->
+<div class="section">
+  <div class="section-label">Settlement</div>
+  <div class="section-title">정산</div>
+  <div class="settlement-lead">캠페인 선정 완료 후 정산을 위한 서류 및 연락처를 누락 없이 제출해 주세요.<br>정산은 <strong>정산 자료 제출 후 2주</strong> 이내 지급됩니다.</div>
+
+  <div class="settle-tag-label">제출 서류</div>
+  <div class="settle-doc-text">— 성함, 연락처, 신분증 사본 (뒷자리 포함), 통장 사본</div>
+
+  <div class="settle-tag-label">수신 이메일</div>
+  <div class="settle-copy-box">
+    <span>hwangyksiriai@gmail.com</span>
+    <button type="button" class="settle-copy-btn" onclick="copyText('hwangyksiriai@gmail.com')">복사</button>
+  </div>
+
+  <div class="settle-tag-label">메일 제목</div>
+  <div class="settle-copy-box">
+    <span>로이어 _이름_@인스타핸들</span>
+    <button type="button" class="settle-copy-btn" onclick="copyText('로이어 _이름_@인스타핸들')">복사</button>
+  </div>
+
+  <div class="warning-box">
+    ! 정산 자료는 브랜드로부터 확인 안내를 받은 인플루언서에 한해서 제출해 주세요.<br>
+    ! 확정 안내를 받지 못한 경우 서류를 제출하지 마세요.
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <strong>LOYR (로이어)</strong><br>
+  본 가이드라인은 선별된 크리에이터에게만 제공되는 자료입니다.<br>
+  문의사항이 있으시면 담당자에게 연락해 주세요.
+</div>
+
+<div class="copy-toast" id="copyToast"></div>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+  function showToast(text) {
+    const toast = document.getElementById('copyToast');
+    toast.textContent = '"' + text + '" 복사됨';
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 1500);
+  }
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => showToast(text));
+  }
+
+  document.querySelectorAll('.hashtag').forEach(el => {
+    el.addEventListener('click', () => {
+      const tag = el.textContent.replace('⎘', '').trim();
+      copyText(tag);
+    });
+  });
+
+  document.querySelectorAll('.collab-handle').forEach(el => {
+    el.addEventListener('click', () => {
+      const handle = el.textContent.replace('⎘', '').trim();
+      copyText(handle);
+    });
+  });
+
+  // 신청 폼: 주소 검색 (다음 우편번호 서비스)
+  function searchAddress() {
+    new daum.Postcode({
+      oncomplete: function(data) {
+        document.getElementById('appZip').value = data.zonecode;
+        document.getElementById('appRoadAddress').value = data.roadAddress;
+        updateFullAddress();
+        document.getElementById('appDetailAddress').focus();
+      }
+    }).open();
+  }
+
+  // 배송지 주소 + 상세 주소를 하나의 값으로 합쳐서 hidden 필드에 저장
+  // (구글시트 연동 시 주소는 이 필드 하나로, 우편번호는 zipcode 필드로 별도 전달)
+  function updateFullAddress() {
+    const road = document.getElementById('appRoadAddress').value.trim();
+    const detail = document.getElementById('appDetailAddress').value.trim();
+    document.getElementById('appFullAddress').value = [road, detail].filter(Boolean).join(' ');
+  }
+  const appDetailAddressEl = document.getElementById('appDetailAddress');
+  if (appDetailAddressEl) appDetailAddressEl.addEventListener('input', updateFullAddress);
+
+  // 인스타그램 입력값(@handle, instagram.com/handle, 순수 handle 등)을
+  // https://instagram.com/handle 형태의 완전한 링크로 정규화
+  function normalizeInstagramLink(value) {
+    let v = (value || '').trim();
+    if (!v) return '';
+    if (/^https?:\/\//i.test(v)) return v;
+    v = v.replace(/^@/, '');
+    v = v.replace(/^(www\.)?instagram\.com\//i, '');
+    v = v.replace(/^\/+/, '').replace(/\/+$/, '');
+    return 'https://instagram.com/' + v;
+  }
+
+  const appInstagramEl = document.getElementById('appInstagram');
+  if (appInstagramEl) {
+    appInstagramEl.addEventListener('blur', () => {
+      if (appInstagramEl.value.trim()) {
+        appInstagramEl.value = normalizeInstagramLink(appInstagramEl.value);
+      }
+    });
+  }
+
+  // 구글시트 연동 설정
+  // google-apps-script/Code.gs를 스프레드시트에 배포한 뒤 발급되는 웹 앱 URL을 아래에 붙여넣어 주세요.
+  // 타입(A~G)·고료는 이 페이지 고유값이며, 구글시트에서 고료별 탭으로 자동 분리되어 저장됩니다.
+  const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzH33kFDdTQ_ZXGZr35whPpd9Zz2-n9Cxg2uUItlJnDlGRGqRIHuhjKs1W7hl6cTLarag/exec';
+  const APP_TIER = 'B';
+  const APP_PRICE = '10만원';
+
+  // 신청 폼 제출
+  // 우편번호(zipcode)·휴대폰(phone)은 앞자리 0 보존을 위해 항상 문자열로 취급할 것
+  function submitApplication(e) {
+    e.preventDefault();
+    updateFullAddress();
+
+    const form = document.getElementById('applicationForm');
+    const data = {
+      tier: APP_TIER,
+      price: APP_PRICE,
+      productLine: (form.productLine.value || '').trim(),
+      name: form.name.value.trim(),
+      instagram: normalizeInstagramLink(form.instagram.value),
+      phone: String(form.phone.value.trim()),
+      email: form.email.value.trim(),
+      zipcode: String(form.zipcode.value.trim()),
+      address: form.fullAddress.value,
+      note: form.note.value.trim()
+    };
+
+    if (!GAS_WEB_APP_URL || GAS_WEB_APP_URL.indexOf('YOUR_WEB_APP_URL') !== -1) {
+      console.log('캠페인 신청 데이터', data);
+      showToast('구글시트 연동 URL이 설정되지 않았습니다');
+      return false;
+    }
+
+    const submitBtn = document.querySelector('.submit-btn');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '제출 중...'; }
+
+    fetch(GAS_WEB_APP_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(data)
+    }).then(() => {
+      showToast('제출이 완료되었습니다');
+      form.reset();
+      document.getElementById('appFullAddress').value = '';
+    }).catch(() => {
+      showToast('제출 중 오류가 발생했습니다. 다시 시도해 주세요.');
+    }).finally(() => {
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '로이어 캠페인 지원서 제출하기'; }
+    });
+
+    return false;
+  }
+</script>
+</body>
+</html>
