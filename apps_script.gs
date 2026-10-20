@@ -20,7 +20,7 @@ const SHEET_NAME = '시트1';
    같이 바꿔야 합니다. */
 const HEADERS = [
   '제출일시', '타입', '고료', '이름', '인스타그램', '휴대폰',
-  '이메일', '희망 제품 라인', '우편번호', '배송지 주소', '요청사항'
+  '이메일', '제공 제품', '우편번호', '배송지 주소', '요청사항'
 ];
 const TIER_COL  = 2;   // 타입
 const FEE_COL   = 3;   // 고료
@@ -129,7 +129,7 @@ function getOrCreateSheet_() {
     sheet.setColumnWidth(2, 90);    // 타입
     sheet.setColumnWidth(3, 90);    // 고료
     sheet.setColumnWidth(5, 230);   // 인스타그램
-    sheet.setColumnWidth(8, 180);   // 희망 제품 라인
+    sheet.setColumnWidth(8, 180);   // 제공 제품
     sheet.setColumnWidth(10, 300);  // 배송지 주소
     sheet.setColumnWidth(11, 220);  // 요청사항
 
@@ -228,7 +228,7 @@ function 테스트_더미행_넣기() {
           instagram: 'https://instagram.com/test' + (i + 1),
           phone: '010-0000-000' + (i + 1),
           email: 'test@example.com',
-          productLine: i % 2 === 0 ? '블루펩타이드 라인' : '세럼 라인',
+          productLine: '블루펩타이드 라인 (세럼+크림)',
           zipcode: '06234',
           address: '서울시 강남구 테헤란로 1 101동 101호',
           note: '테스트 행입니다'
